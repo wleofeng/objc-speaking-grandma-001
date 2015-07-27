@@ -27,22 +27,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		1BED14D72746CEF384A6042E /* Pods-unit_tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.debug.xcconfig"; sourceTree = "<group>"; };
 		34A43FE2D03B880F765CD948 /* main.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		43E87236B6C073D23313B116 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS7.1.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
 		61B79C1AF52BB445EB2E2A32 /* LaunchScreen.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; path = LaunchScreen.xib; sourceTree = "<group>"; };
 		622F487CFEE009A72F25532B /* FISAppDelegate.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = FISAppDelegate.h; sourceTree = "<group>"; };
 		7204927E7B787628659BECEB /* libPods-unit_tests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-unit_tests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		74E035A6561BE412C08860DB /* UnitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UnitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
-		77C55A3FFAE0FBF736FFB531 /* UnitTests-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "UnitTests-Info.plist"; sourceTree = "<group>"; };
 		7BB30A89BB1F25D5623F0B32 /* objc-speaking-grandma-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "objc-speaking-grandma-Info.plist"; sourceTree = "<group>"; };
 		837229EC9ED0AEDDDAB9CADB /* FISAppDelegate.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = FISAppDelegate.m; sourceTree = "<group>"; };
 		88ABA1D3EA0FB78FFFB6E987 /* Images.xcassets */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		A301000E2703F0C22C1F444F /* UnitTests-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "UnitTests-Prefix.pch"; sourceTree = "<group>"; };
 		D78E0AF82D0492EF681E5F63 /* objc-speaking-grandma-Prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "objc-speaking-grandma-Prefix.pch"; sourceTree = "<group>"; };
 		DE7C8BE0D9AADAB21588CC9C /* Main.storyboard */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 		EDC2BB61598F813F002A0AA2 /* objc-speaking-grandma.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "objc-speaking-grandma.app"; sourceTree = BUILT_PRODUCTS_DIR; };
-		EFE6B52005FE5FBCFCC527F0 /* Pods-unit_tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-unit_tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-unit_tests/Pods-unit_tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -82,24 +78,6 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		2E8AC2F89BB611CFB642F98A /* Resources */ = {
-			isa = PBXGroup;
-			children = (
-				77C55A3FFAE0FBF736FFB531 /* UnitTests-Info.plist */,
-				A301000E2703F0C22C1F444F /* UnitTests-Prefix.pch */,
-			);
-			path = Resources;
-			sourceTree = "<group>";
-		};
-		3C06A47C28DF8708CEEABE81 /* Pods */ = {
-			isa = PBXGroup;
-			children = (
-				EFE6B52005FE5FBCFCC527F0 /* Pods-unit_tests.release.xcconfig */,
-				1BED14D72746CEF384A6042E /* Pods-unit_tests.debug.xcconfig */,
-			);
-			name = Pods;
-			sourceTree = "<group>";
-		};
 		7EA888C1FE40F588848328DE /* Products */ = {
 			isa = PBXGroup;
 			children = (
@@ -107,13 +85,6 @@
 				74E035A6561BE412C08860DB /* UnitTests.xctest */,
 			);
 			name = Products;
-			sourceTree = "<group>";
-		};
-		7FB36BDF2576F7F8CD42CBF5 /* Tests */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tests;
 			sourceTree = "<group>";
 		};
 		A9B6FACFA3C79F1220455A68 /* Resources */ = {
@@ -147,23 +118,12 @@
 			path = "objc-speaking-grandma";
 			sourceTree = "<group>";
 		};
-		DC173283E5E7DAF2E15BC976 /* UnitTests */ = {
-			isa = PBXGroup;
-			children = (
-				2E8AC2F89BB611CFB642F98A /* Resources */,
-				7FB36BDF2576F7F8CD42CBF5 /* Tests */,
-			);
-			path = UnitTests;
-			sourceTree = "<group>";
-		};
 		DE9E0FD665F3C63167120608 = {
 			isa = PBXGroup;
 			children = (
 				CD5C65427D98688BC1E5D875 /* objc-speaking-grandma */,
-				DC173283E5E7DAF2E15BC976 /* UnitTests */,
 				08095B452581938D8B02EC88 /* Frameworks */,
 				7EA888C1FE40F588848328DE /* Products */,
-				3C06A47C28DF8708CEEABE81 /* Pods */,
 			);
 			indentWidth = 4;
 			sourceTree = "<group>";
@@ -447,7 +407,6 @@
 		};
 		71679B67D8A5E3618EE591DC /* Debug */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = 1BED14D72746CEF384A6042E /* Pods-unit_tests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/objc-speaking-grandma.app/objc-speaking-grandma";
 				FRAMEWORK_SEARCH_PATHS = (
@@ -467,7 +426,6 @@
 		};
 		7B5DD3DAB8D442D9D553ADFC /* Release */ = {
 			isa = XCBuildConfiguration;
-			baseConfigurationReference = EFE6B52005FE5FBCFCC527F0 /* Pods-unit_tests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(BUILT_PRODUCTS_DIR)/objc-speaking-grandma.app/objc-speaking-grandma";
 				FRAMEWORK_SEARCH_PATHS = (
