@@ -64,7 +64,7 @@ if (shouting) {
 if ([talkToGrandma isEqualToString:shoutAtGrandma]) {
     NSLog(@"NO, NOT SINCE 1938!");
 } else {
-    NSLog(@"WHAT'S THAT? SPEAK UP, SONNY!");
+    NSLog(@"WHAT'S THAT? SPEAK UP, DEAR!");
 }
 ```
 
@@ -81,7 +81,7 @@ if ([talkToGrandma isEqualToString:shoutAtGrandma]) {
 
 ```objc
 if (!shouting) {
-    NSLog(@"WHAT'S THAT? SPEAK UP, SONNY!");
+    NSLog(@"WHAT'S THAT? SPEAK UP, DEAR!");
 } else {
     NSLog(@"NO, NOT SINCE 1938!");
 }
@@ -93,7 +93,7 @@ if (!shouting) {
 
 ```objc
 if (![talkToGrandma isEqualToString:shoutAtGrandma]) {
-    NSLog(@"WHAT'S THAT? SPEAK UP, SONNY!");
+    NSLog(@"WHAT'S THAT? SPEAK UP, DEAR!");
 } else {
     NSLog(@"NO, NOT SINCE 1938!");
 }
@@ -119,10 +119,10 @@ shoutAtGrandma = [talkToGrandma uppercaseString];
 Now run (`⌘` `R`) your program again and see what happens. You should get different print outs by your `if`/`else` statements that evaluated the `shouting` boolean versus your `if`/`else` statements that directly evaluated the comparison with the `isEqualToString:` method:
 
 ```
-NO, NOT SINCE 1938!             // boolean
-WHAT'S THAT? SPEAK UP, SONNY!   // method
-NO, NOT SINCE 1938!             // boolean
-WHAT'S THAT? SPEAK UP, SONNY!   // method
+NO, NOT SINCE 1938!            // boolean
+WHAT'S THAT? SPEAK UP, DEAR!   // method
+NO, NOT SINCE 1938!            // boolean
+WHAT'S THAT? SPEAK UP, DEAR!   // method
 ```
 This is because the `shouting` boolean holds the evaluation of the `isEqualToString:` method from **the point in our code at which is what last set.** Since we changed the `talkToGrandma` and `shoutAtGrandma` strings *after* we set the `shouting` boolean, the result of directly comparing the strings will differ from the result that was captured into the `shouting` boolean above.
 
