@@ -15,7 +15,7 @@
 
 This code-along lab will walk you through creating an `if`/`else` statement, comparing strings, and creating a `BOOL` variable to pass into a conditional.
 
-Open the `*.xcodeproj` file and navigate to the `FISAppDelegate.m` implementation file. You'll enter all of your code in the `application:didFinishLaunchingWithOptions:` method body (between the curly braces `{``}` but before the `return YES;` statement).
+Open the `objc-speaking-grandma.xcodeproj` file and navigate to the `FISAppDelegate.m` implementation file. You'll enter all of your code in the `application:didFinishLaunchingWithOptions:` method body (between the curly braces `{``}` but before the `return YES;` statement).
 
 ### Code-Along I: Talk To Grandma
 
@@ -32,7 +32,7 @@ Open the `*.xcodeproj` file and navigate to the `FISAppDelegate.m` implementatio
   * `BOOL shouting = [talkToGrandma isEqualToString:shoutAtGrandma];`  
   **Top-tip:** *Remember that* `BOOL`*s are declared* ***without*** *using a* `*` *symbol.*
 
-4 — Write an `if` statement that evaluates `shout` as its conditional. If the `if` statement passes, print what Grandma says when she (thinks she) hears you: "NO, NOT SINCE 1938!" by using an `NSLog()`:
+4 — Write an `if` statement that evaluates `shouting` as its conditional. If the `if` statement passes, print what Grandma says when she (thinks she) hears you: "NO, NOT SINCE 1938!" by using an `NSLog()`:
 
 ```objc
 if (shouting) {  
@@ -124,6 +124,6 @@ WHAT'S THAT? SPEAK UP, DEAR!   // method
 NO, NOT SINCE 1938!            // boolean
 WHAT'S THAT? SPEAK UP, DEAR!   // method
 ```
-This is because the `shouting` boolean holds the evaluation of the `isEqualToString:` method from **the point in our code at which is what last set.** Since we changed the `talkToGrandma` and `shoutAtGrandma` strings *after* we set the `shouting` boolean, the result of directly comparing the strings will differ from the result that was captured into the `shouting` boolean above.
+This is because the `shouting` boolean holds the evaluation of the `isEqualToString:` method from **the point in our code at which it was last set.** Since we changed the `talkToGrandma` and `shoutAtGrandma` strings *after* we set the `shouting` boolean, the result of directly comparing the strings will differ from the result that was captured into the `shouting` boolean above.
 
 Booleans can useful for preserving the result of a comparison from a particular point in your code for later use. But, evaluating a boolean variable instead the direct result of a comparison will not give you a "live" result based on the present state of your code.
