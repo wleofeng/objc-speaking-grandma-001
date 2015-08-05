@@ -121,8 +121,6 @@ Now run (`⌘` `R`) your program again and see what happens. You should get diff
 ```
 NO, NOT SINCE 1938!            // boolean
 WHAT'S THAT? SPEAK UP, DEAR!   // method
-NO, NOT SINCE 1938!            // boolean
-WHAT'S THAT? SPEAK UP, DEAR!   // method
 ```
 This is because the `shouting` boolean holds the evaluation of the `isEqualToString:` method from **the point in our code at which it was last set.** Since we changed the `talkToGrandma` and `shoutAtGrandma` strings *after* we set the `shouting` boolean, the result of directly comparing the strings will differ from the result that was captured into the `shouting` boolean above.
 
