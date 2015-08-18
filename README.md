@@ -21,7 +21,7 @@ Open the `objc-speaking-grandma.xcodeproj` file and navigate to the `FISAppDeleg
 
 1 — Create an `NSString` variable called `talkToGrandma` and set it equal to any regular sentence that you like:
   
-  * `NSString *talkToGrandma = @"Hi, Grandma.";`
+  * `NSString *talkToGrandma = @"Hi, Grandma!";`
 
 2 — Create an `NSString` variable called `shoutAtGrandma` and set it equal to the result of calling the `uppercaseString` method on  `talkToGrandma`:
   
@@ -36,14 +36,14 @@ Open the `objc-speaking-grandma.xcodeproj` file and navigate to the `FISAppDeleg
 
 ```objc
 if (shouting) {  
-    NSLog(@"NO, NOT SINCE 1938"); 
+    NSLog(@"NO, NOT SINCE 1938!"); 
 }
 ```
 5 — Add an `else` statement that prints what Grandma says when she *definitely* can't hear you: "WHAT'S THAT? SPEAK UP, DEAR!" by using an `NSLog()`:
 
 ```objc
 if (shouting) {  
-    NSLog(@"NO, NOT SINCE 1938"); 
+    NSLog(@"NO, NOT SINCE 1938!"); 
 } else {
     NSLog(@"WHAT'S THAT? SPEAK UP, DEAR!");
 }
@@ -72,7 +72,7 @@ if ([talkToGrandma isEqualToString:shoutAtGrandma]) {
 
 2 — Change your `talkToGrandma` string declaration back to a regular sentence containing lowercase letters:
 
-  * `NSString *talkToGrandma = @"Hi, Grandma";`
+  * `NSString *talkToGrandma = @"Hi, Grandma!";`
   * Run your program again using `⌘` `R`, you should now see `WHAT'S THAT? SPEAK UP, DEAR!` printed to your console.
 
 ### Code-Along III: Inverted Check
