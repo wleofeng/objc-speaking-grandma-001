@@ -124,4 +124,4 @@ WHAT'S THAT? SPEAK UP, DEAR!   // method
 ```
 This is because the `shouting` boolean holds the evaluation of the `isEqualToString:` method from **the point in our code at which it was last set.** Since we changed the `talkToGrandma` and `shoutAtGrandma` strings *after* we set the `shouting` boolean, the result of directly comparing the strings will differ from the result that was captured into the `shouting` boolean above.
 
-Booleans can useful for preserving the result of a comparison from a particular point in your code for later use. But, evaluating a boolean variable instead the direct result of a comparison will not give you a "live" result based on the present state of your code.
+Booleans can be useful for preserving the result of a comparison from a particular point in your code for later use. But evaluating a boolean variable instead of the direct result of a comparison will not give you a "live" result based on the present state of your code.
